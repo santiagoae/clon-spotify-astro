@@ -26,6 +26,9 @@ jobs:
         uses: pnpm/action-setup@v2
         with:
           version: 8
+      - name: pnpm install
+        # We use --force because we want all artifacts of @reflink/reflink to be installed.
+        run: pnpm install --force
         # con:
           # path: . # La ubicación raíz de tu proyecto de Astro dentro del repositorio. (opcional)
           # node-version: 20 # La versión específica de Node que debería usarse para construir tu sitio. Por defecto es 20. (opcional)
