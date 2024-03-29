@@ -7,5 +7,7 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind(), svelte(), react()],
-  output: 'server'
+  output: 'server',
+  site: 'https://santiagoae.github.io',
+  base: '/astro-clon'
 });
