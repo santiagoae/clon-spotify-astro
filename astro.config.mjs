@@ -11,5 +11,6 @@ export default defineConfig({
   adapter: node({
     mode: 'standalone',
   }),
-  site: 'https://santiagoae.github.io'
+  site: 'https://santiagoae.github.io',
+  base: '/clon-spotify-astro'
 });
